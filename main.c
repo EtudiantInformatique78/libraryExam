@@ -1,4 +1,52 @@
 #include <stdio.h>
+#include <stdbool.h>
+
+
+void printArgumentShow()
+{
+    char show[] = "Hey ! Use [q] to quit, [l] to list books, [a] to add a book, [s] to search a book, [e] to edit a book or [d] to delete a book";
+    printf("%s\n", show);
+
+}
+
+void getUserInput(char* userInput)
+{
+    printArgumentShow();
+    int returnScanf = scanf("%1s", userInput);
+    if(returnScanf > 1)
+    {
+        printf("More than one character in userInput\n");
+    }
+    else if(returnScanf == 0)
+    {
+        printf("No character\n");
+    }
+}
+
+void interactionWithTheUser(bool* inloop, char value /*, Employee** listEmployee, int*actualNumOfEmployee*/)
+{
+    switch(value)
+    {
+        case 'q':
+            *inloop = false;
+            break;
+        case 'l':
+            //showEmployees(listEmployee, *actualNumOfEmployee);
+            break;
+        case 'a':
+            //addNewEmployee(listEmployee, actualNumOfEmployee);
+            break;
+        case 's':
+            //addNewEmployee(listEmployee, actualNumOfEmployee);
+            break;
+        case 'e':
+            //updateDataEmployee(listEmployee, actualNumOfEmployee);
+            break;
+        case 'd':
+            //deleteTheEmployee(listEmployee, actualNumOfEmployee);
+            break;
+    }
+}
 
 typedef struct Books
 {
@@ -30,6 +78,17 @@ void showBooks(const struct Books *book)
 
 int main(int argc, char** argv)
 {
+
+    char userChoice[1];
+    bool inloop = true;
+
+
+    while(inloop)
+    {
+        getUserInput(userChoice);
+        interactionWithTheUser(&inloop, userChoice[0]);
+
+    }
 
     return 0;
 }
