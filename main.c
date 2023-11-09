@@ -64,18 +64,19 @@ void showBooks(const struct Books *book)
     printf("Title : %s\n", book->title);
     printf("Autor : %s\n", book->autor);
     printf("Publication Year : %d\n", book->publicationYear);
-
-    if(state == 1)
+    bool state = true;
+    if(state)
     {
         printf("The book is not available for now.\n");
         printf("Remaining days : %d\n", book->remainingDays);
     }
     else
     {
-        printf("The book is available to borrow.")
+        printf("The book is available to borrow.");
         printf("You can borrow it now :\n");
     }
 }
+
 
 int main(int argc, char** argv)
 {
