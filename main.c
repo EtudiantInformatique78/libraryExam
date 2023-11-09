@@ -23,7 +23,7 @@ void getUserInput(char* userInput)
     }
 }
 
-void interactionWithTheUser(bool* inloop, char value /*, Employee** listEmployee, int*actualNumOfEmployee*/)
+void interactionWithTheUser(bool* inloop, char value)
 {
     switch(value)
     {
@@ -31,19 +31,20 @@ void interactionWithTheUser(bool* inloop, char value /*, Employee** listEmployee
             *inloop = false;
             break;
         case 'l':
-            //showEmployees(listEmployee, *actualNumOfEmployee);
+            //showBooks();
+
             break;
         case 'a':
-            //addNewEmployee(listEmployee, actualNumOfEmployee);
+
             break;
         case 's':
-            //addNewEmployee(listEmployee, actualNumOfEmployee);
+
             break;
         case 'e':
-            //updateDataEmployee(listEmployee, actualNumOfEmployee);
+
             break;
         case 'd':
-            //deleteTheEmployee(listEmployee, actualNumOfEmployee);
+
             break;
     }
 }
