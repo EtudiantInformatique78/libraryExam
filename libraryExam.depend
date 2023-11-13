@@ -1,3 +1,47 @@
 # depslib dependency file v1.0
-1699537060 source:/home/adam/Documents/tutorialC/libraryExam/affichage.c
+1699630514 source:/home/adam/Documents/tutorialC/libraryExam/affichage.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"books.h"
+	"compare.h"
+	"userInteraction.h"
+
+1699631792 source:/home/adam/Documents/tutorialC/libraryExam/books.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"books.h"
+
+1699632002 /home/adam/Documents/tutorialC/libraryExam/books.h
+
+1699631820 source:/home/adam/Documents/tutorialC/libraryExam/main.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"affichage.h"
+	"books.h"
+	"compare.h"
+
+1699630545 /home/adam/Documents/tutorialC/libraryExam/affichage.h
+	"books.h"
+
+1699630269 source:/home/adam/Documents/tutorialC/libraryExam/compare.c
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
+1699607934 /home/adam/Documents/tutorialC/libraryExam/compare.h
+	<stdbool.h>
+
+1699608171 /home/adam/Documents/tutorialC/libraryExam/userInteraction.h
+	"books.h"
+
+1699629978 source:/home/adam/Documents/tutorialC/libraryExam/userInteraction.c
+	<stdio.h>
+	"compare.h"
+	"books.h"
 
